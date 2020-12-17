@@ -6,7 +6,6 @@ import Hero from './Hero/Hero';
 import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
 import LoginPage from './LoginPage/LoginPage';
-// import MyChart from './HomePage/MyChart';
 
 
 import {
@@ -25,13 +24,11 @@ function App() {
       <div className ="mainContainer">
        {/* This is what is changing between pages  */}
         <Switch>
-           
             <Route path="/login">
               <LoginPage  />
             </Route>
             <Route path="/">
               <HomePage  />
-              {/* <MyChart /> */}
             </Route>
           </Switch>
 

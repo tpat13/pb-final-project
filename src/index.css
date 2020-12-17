@@ -349,10 +349,6 @@ template {
 }
 
 
-
-
-
-
 * {
   box-sizing: border-box;
 }
@@ -360,6 +356,7 @@ template {
 body {
   font-size: 10px;
   font-family: Tahoma, Arial;
+  background-color:  #dd65b9;
 }
 
 div.menu {
