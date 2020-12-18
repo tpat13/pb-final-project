@@ -7,6 +7,8 @@ import Hero from './Hero/Hero';
 import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
 import Login from './Components/sessions/Login';
+import ListBudgetData from './Components/sessions/ListBudgetData';
+import EnterBudgetData from './Components/budget/EnterBudgetData';
 
 
 import {
@@ -57,8 +59,15 @@ function App() {
               <a href="#">Sign out</a>
             </span>
              <Switch>
-             <Route path="/dashboard">
+            {/*  <Route path="/dashboard">
               <HomePage  />
+              </Route> */}
+              <Route path="/enter-budget">
+                <EnterBudgetData />
+              </Route>
+
+              <Route path="/">
+              <ListBudgetData  />
               </Route>
 
             </Switch> 

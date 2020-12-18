@@ -19,7 +19,7 @@ const budget = require("./categories");
 
 
 //request to "/budget"
-app.get('/budget', (req, res) => {
+app.get('/', (req, res) => {
     res.json(budget);
     
 
