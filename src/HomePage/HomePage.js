@@ -81,14 +81,12 @@ function HomePage() {
 
     <div className="page-area">
 
-        {/* <div className="text-box">
+        { <div className="text-box">
             <h1>Stay on track</h1>
             <p>
-                Do you know where you are spending your money? If you really stop to track it down,
-                you would get surprised! Proper budget management depends on real data... and this
-                app will help you with that!
+                This section is meant to help you visualize your personal budget
             </p>
-        </div> */}
+        </div> }
 
 
         <div className="text-box">

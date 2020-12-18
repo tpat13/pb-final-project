@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import fire from './fire.js';
 
 import Menu from './Menu/Menu';
 import Hero from './Hero/Hero';
 import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
-import LoginPage from './LoginPage/LoginPage';
+import Login from './Components/sessions/Login';
 
 
 import {
@@ -17,25 +18,56 @@ import {
 
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  
+    fire.auth().onAuthStateChanged((user) => {
+      return user ? setIsLoggedIn(true) : setIsLoggedIn(false);
+  });
+  
+  const signOut = () => {
+    fire.auth().signOut()
+  };
+
+  console.log('logged in?', isLoggedIn);
   return (
-    <Router>
-      <Menu/>
-      <Hero/>
+   
       <div className ="mainContainer">
+      <Router>
+        
        {/* This is what is changing between pages  */}
-        <Switch>
-            <Route path="/login">
-              <LoginPage  />
-            </Route>
-            <Route path="/">
+       <Menu/>
+        <Hero/>
+       {!isLoggedIn
+          ? (
+            <>
+            {/* Login page is shown first  */}
+            <Switch>
+              <Route path="/">
+                <Login />
+              </Route>
+
+            </Switch>
+            </>
+          ) 
+          : (
+            
+            // On successful login, show routes and logout option
+            <>
+            <span onClick={signOut}>
+              <a href="#">Sign out</a>
+            </span>
+             <Switch>
+             <Route path="/dashboard">
               <HomePage  />
-            </Route>
-          </Switch>
+              </Route>
 
-      </div>
-      <Footer/>
-
-    </Router>
+            </Switch> 
+            </>
+          
+          )}
+          <Footer/>
+      </Router>
+    </div>
   );
 }
 

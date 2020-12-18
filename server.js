@@ -17,31 +17,6 @@ app.use(cors());
 app.use('/', express.static('public'));
 const budget = require("./categories"); 
 
-/* const budget = {
-    myBudget: [
-    {
-
-        title: 'Eat out',
-        budget: 30
-    },
-
-    {
-        title: 'Rent',
-        budget: 350
-    },
-
-    {
-        title: 'Groceries',
-        budget: 90
-    }
-    ]
-}; */
-
-/* //routes
-app.get('/hello', (req, res) => {
-    res.send('Hello World!');
-}); */
-
 
 //request to "/budget"
 app.get('/budget', (req, res) => {
