@@ -17,7 +17,7 @@ https://young-wave-84569.herokuapp.com/
     -  Removed noscript tag for users using assistive technology
     - Added form labels for users with screen readers
 
-##Charts
+###Charts
 Charts are only working locally. Even though I established a connection to my MongoDB Atlas, was not able to successfully retrieve data from my collection. 
 
 ### MERN STACK
