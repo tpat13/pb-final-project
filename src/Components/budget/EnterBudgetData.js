@@ -2,18 +2,19 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const EnterBudgetData = () => {
-  const [name, setName] = useState();
-  const [phone, setPhone] = useState();
+  const [title, setTitle] = useState();
+  const [budget, setBudget] = useState();
   
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    console.log(`submitted: ${name} - ${phone}`);
+    console.log(`submitted: ${title} - ${budget}`);
   };
   
   return (
+
     <div>
-      
+       <title>Personal Budget App | Enter Budget Data</title>
        <Link to="/">View Budget</Link> 
      
       {/* <Link to="/dashboard"> Dashboard (view charts)</Link>  */}
@@ -23,12 +24,12 @@ const EnterBudgetData = () => {
       <input
         type="text"
         placeholder="Type"
-        onChange={({ target }) => setName(target.value)}
+        onChange={({ target }) => setTitle(target.value)}
       /><br />
       <input
         type="text"
         placeholder="Budget Amount"
-        onChange={({ target }) => setPhone(target.value)}
+        onChange={({ target }) => setBudget(target.value)}
       /><br />
 
       

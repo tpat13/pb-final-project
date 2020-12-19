@@ -1,7 +1,7 @@
 //Budget API
 const express = require('express');
 const cors = require('cors');
-const connectDB = require('./src/DB/Connection');
+const connectDB = require('../src/DB/Connection');
 
 
 const app = express();

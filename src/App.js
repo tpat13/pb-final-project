@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import {Helmet} from "react-helmet";
 import './App.css';
 import fire from './fire.js';
 
@@ -19,7 +20,7 @@ import {
 
 
 
-function App() {
+function App()  {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   
     fire.auth().onAuthStateChanged((user) => {
@@ -32,8 +33,9 @@ function App() {
 
   console.log('logged in?', isLoggedIn);
   return (
-   
+    
       <div className ="mainContainer">
+      <title>Personal Budget App | Homepage</title>
       <Router>
         
        {/* This is what is changing between pages  */}
@@ -77,6 +79,7 @@ function App() {
           <Footer/>
       </Router>
     </div>
+    
   );
 }
 

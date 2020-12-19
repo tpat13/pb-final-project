@@ -78,7 +78,7 @@ function HomePage() {
 
   return (
     <main className="container center" id="main">
-
+    <title>Personal Budget App | Dashboard </title>
     <div className="page-area">
 
         { <div className="text-box">

@@ -30,6 +30,7 @@ body {
 
 main {
   display: block;
+
 }
 
 .mainContainer {
@@ -361,12 +362,12 @@ template {
 body {
   font-size: 10px;
   font-family: Tahoma, Arial;
-  background-color:  #dd65b9;
+  background-color: #007FAA;
 }
 
 div.menu {
   width: 100%;
-  background-color:#df357b;
+  background-color:#d43900;
   height: 44px;
   padding: 0 40px;
 }
@@ -396,7 +397,7 @@ div.menu ul li a:hover  {
 
 div.hero {
   height: 200px;
-  background-color: #dd65b9;
+  background-color:#007FAA;
   /* background-image: url("bg.png"); */
   background-size: 400px;
   background-repeat: no-repeat;
@@ -417,7 +418,7 @@ div.hero h1 {
 }
 
 div.hero h2 {
-  color: #960b45;
+  color: #f0b2cb;
 }
 
 /* For about page */
@@ -450,15 +451,19 @@ width: 30%;
 
 .bottom {
   height: 40px;
-  background-color: #df357b;
+  background-color:#d43900;
   padding-top: 20px;
   padding: 40px;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  
 }
 
 .about-bottom {
   height: 40px;
   width: 100%;
-  background-color: #df357b;
+  background-color:#d43900;
   position: fixed;
   left: 0;
   bottom: 0;

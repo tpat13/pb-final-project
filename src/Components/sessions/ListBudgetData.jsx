@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 const ListBudgetData = () => {
   return (
     <div>
+       <title>Personal Budget App | List Budget Data</title>
       <Link to="/enter-budget">Add Budget </Link>
       {/* <Link to="/dashboard">Dashboard (view charts)</Link>  */}
 

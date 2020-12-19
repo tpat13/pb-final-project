@@ -13,6 +13,7 @@ const Login = () => {
     }
     return (
         <div>
+        <title>Personal Budget App | Login Page</title>
         <h1>Login</h1>
             <form onSubmit={handleSubmit}>
                 <input
