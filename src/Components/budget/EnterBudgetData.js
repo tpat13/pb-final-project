@@ -21,14 +21,20 @@ const EnterBudgetData = () => {
       
     <h2>Add Number</h2>
     <form onSubmit={handleSubmit}>
-      <input
+    <label for="text">Budget Type:</label>
+      <input 
+        id= "text"
         type="text"
         placeholder="Type"
+        aria-required="true"
         onChange={({ target }) => setTitle(target.value)}
       /><br />
+      <label for="budget">Budget Amount:</label>
       <input
+        id="budget"
         type="text"
         placeholder="Budget Amount"
+        aria-required="true"
         onChange={({ target }) => setBudget(target.value)}
       /><br />
 

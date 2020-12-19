@@ -36,7 +36,7 @@ function App()  {
   console.log('logged in?', isLoggedIn);
   return (
     
-      <div className ="mainContainer">
+      <div className ="mainContainer" role="main">
       <title>Personal Budget App | Homepage</title>
       <Router>
         

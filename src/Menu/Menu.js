@@ -8,8 +8,8 @@ import {
 function Menu() {
   return (
 <nav
-    role = "navigation"
     aria-label="Main menu"
+    role = "navigation"
     itemScope
     itemType="https://schema.org/SiteNavigationElement"
 >
@@ -18,6 +18,7 @@ function Menu() {
             <li><Link itemProp="url" to="/">Home</Link></li>
             <li><Link itemProp="url" to="/login">Login</Link></li>
             <li><Link itemProp="url" to="/dashboard">Dashboard</Link></li>
+            <li><Link itemProp="url" to="/enter-budget">Enter Budget</Link></li>
 
         </ul>
     </div>

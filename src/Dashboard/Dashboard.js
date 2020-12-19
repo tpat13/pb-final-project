@@ -79,7 +79,7 @@ function HomePage() {
     getBudget();
 
   return (
-    <main className="container center" id="main">
+    <main className="container center" id="main"  role = "main">
     <title>Personal Budget App | Dashboard </title>
     <div className="page-area">
 

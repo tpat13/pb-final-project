@@ -16,14 +16,18 @@ const Login = () => {
         <title>Personal Budget App | Login Page</title>
         <h1>Login</h1>
             <form onSubmit={handleSubmit}>
-                <input
+            <label for="email">Email:</label>
+                    <input
+                    id ="email"
                     type="text"
                     onChange={({ target }) => setEmail(target.value)}
                     placeholder="Email"
                     aria-required="true"
                 />
                 <br />
+                <label for="pass">Password:</label>
                 <input
+                   id ="pass"
                     type="password"
                     onChange={({ target}) => setPassword(target.value)}
                     placeholder="Password"

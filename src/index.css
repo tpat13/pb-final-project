@@ -428,7 +428,7 @@ div.hero h1 {
 }
 
 div.hero h2 {
-  color: #f0b2cb;
+  color: #f8d7e4;
 }
 
 /* For about page */
@@ -472,17 +472,10 @@ width: 30%;
   height:60px;
   
 }
-/* 
-.about-bottom {
-  height: 40px;
-  width: 100%;
-  background-color:#d43900;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-
-}
- */
+a:focus {
+  outline:1px solid red;
+  background:yellow;
+  }
 
 .center {
   text-align: center;

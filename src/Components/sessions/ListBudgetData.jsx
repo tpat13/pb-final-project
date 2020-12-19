@@ -12,14 +12,22 @@ const ListBudgetData = () => {
       <table>
         <thead>
           <tr>
-            <th>Type</th>
-            <th>Budget Amount</th>
+          <th scope="col">Type</th>
+          <th scope="col">Budget Amount</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Example Budget</td>
-            <td>$300</td>
+            <td>Rent</td>
+            <td>350</td>
+          </tr>
+          <tr>
+            <td>Eat out</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Groceries</td>
+            <td>90</td>
           </tr>
         </tbody>
       </table>
