@@ -20,12 +20,14 @@ const Login = () => {
                     type="text"
                     onChange={({ target }) => setEmail(target.value)}
                     placeholder="Email"
+                    aria-required="true"
                 />
                 <br />
                 <input
                     type="password"
                     onChange={({ target}) => setPassword(target.value)}
                     placeholder="Password"
+                    aria-required="true"
                 />
                 <br />
                 <button type="submit">

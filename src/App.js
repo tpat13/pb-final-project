@@ -5,9 +5,11 @@ import fire from './fire.js';
 
 import Menu from './Menu/Menu';
 import Hero from './Hero/Hero';
-import HomePage from './HomePage/HomePage';
+import HomePage from './Dashboard/Dashboard';
 import Footer from './Footer/Footer';
 import Login from './Components/sessions/Login';
+import Logout from './Components/sessions/Logout';
+
 import ListBudgetData from './Components/sessions/ListBudgetData';
 import EnterBudgetData from './Components/budget/EnterBudgetData';
 
@@ -27,9 +29,9 @@ function App()  {
       return user ? setIsLoggedIn(true) : setIsLoggedIn(false);
   });
   
-  const signOut = () => {
+  /* const signOut = () => {
     fire.auth().signOut()
-  };
+  }; */
 
   console.log('logged in?', isLoggedIn);
   return (
@@ -49,7 +51,7 @@ function App()  {
               <Route path="/">
                 <Login />
               </Route>
-
+              <Footer/>
             </Switch>
             </>
           ) 
@@ -57,9 +59,11 @@ function App()  {
             
             // On successful login, show routes and logout option
             <>
-            <span onClick={signOut}>
+            {/* <span onClick={signOut}>
               <a href="#">Sign out</a>
-            </span>
+            </span> */}
+              <Logout/>
+
              <Switch>
              <Route path="/dashboard">
               <HomePage  />
@@ -76,7 +80,7 @@ function App()  {
             </>
           
           )}
-          <Footer/>
+         
       </Router>
     </div>
     

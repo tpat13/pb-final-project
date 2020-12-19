@@ -2,6 +2,7 @@ import React from 'react';
 import Chart from 'chart.js';
 import axios from 'axios';
 
+// Dashboard shows all three charts
 
 var dataSource = {
     datasets: [
@@ -14,7 +15,8 @@ var dataSource = {
             '#fd6b19',
             '#20C8A6',
             '#CBE474',
-            '#F398F6'
+            '#F398F6',
+            '#333300'
 
 
         ],

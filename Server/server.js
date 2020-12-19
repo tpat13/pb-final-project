@@ -4,16 +4,22 @@ const cors = require('cors');
 const connectDB = require('../src/DB/Connection');
 
 
+
 const app = express();
 const port = 2000;
 
 connectDB();
 //app.use('/api/userModel', require('./API/User'));
 
-//week 5
+
+const todoController=require('./controllers/fetchBudget.js'); 
+const router=express.Router(); 
+module.exports=router.get('/view-budget',todoController.getBudget); 
+
+
 app.use(cors());
 
-//week 4
+
 app.use('/', express.static('public'));
 const budget = require("./categories"); 
 

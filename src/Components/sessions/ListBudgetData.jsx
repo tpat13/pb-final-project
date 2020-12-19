@@ -18,8 +18,8 @@ const ListBudgetData = () => {
         </thead>
         <tbody>
           <tr>
-            <td>Foo Bar</td>
-            <td>999888777</td>
+            <td>Example Budget</td>
+            <td>$300</td>
           </tr>
         </tbody>
       </table>

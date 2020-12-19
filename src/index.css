@@ -22,6 +22,8 @@
 
 body {
   margin: 0;
+  padding:0;
+  height:100%;
 }
 
 /**
@@ -36,6 +38,10 @@ main {
 .mainContainer {
   text-align: center;
 
+}
+
+#container {
+  height:100%;
 }
 
 /**
@@ -364,6 +370,10 @@ body {
   font-family: Tahoma, Arial;
   background-color: #007FAA;
 }
+#body {
+  padding:10px;
+  padding-bottom:60px;   /* Height of the footer */
+}
 
 div.menu {
   width: 100%;
@@ -442,6 +452,7 @@ width: 30%;
 .container {
   padding: 40px;
   width: 100%;
+  height: 100%
 }
 
 .page-area {
@@ -450,16 +461,18 @@ width: 30%;
 }
 
 .bottom {
-  height: 40px;
+
   background-color:#d43900;
   padding-top: 20px;
   padding: 40px;
   position:absolute;
   bottom:0;
   width:100%;
+
+  height:60px;
   
 }
-
+/* 
 .about-bottom {
   height: 40px;
   width: 100%;
@@ -469,7 +482,7 @@ width: 30%;
   bottom: 0;
 
 }
-
+ */
 
 .center {
   text-align: center;
