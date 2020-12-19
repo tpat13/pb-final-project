@@ -59,9 +59,9 @@ function App() {
               <a href="#">Sign out</a>
             </span>
              <Switch>
-            {/*  <Route path="/dashboard">
+             <Route path="/dashboard">
               <HomePage  />
-              </Route> */}
+              </Route> 
               <Route path="/enter-budget">
                 <EnterBudgetData />
               </Route>

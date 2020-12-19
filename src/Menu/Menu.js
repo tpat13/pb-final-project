@@ -17,6 +17,8 @@ function Menu() {
         <ul>
             <li><Link itemProp="url" to="/">Home</Link></li>
             <li><Link itemProp="url" to="/login">Login</Link></li>
+            <li><Link itemProp="url" to="/dashboard">Dashboard</Link></li>
+
         </ul>
     </div>
 </nav>
