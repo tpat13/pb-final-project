@@ -13,7 +13,11 @@ const EnterBudgetData = () => {
   
   return (
     <div>
+      
        <Link to="/">View Budget</Link> 
+     
+      {/* <Link to="/dashboard"> Dashboard (view charts)</Link>  */}
+      
     <h2>Add Number</h2>
     <form onSubmit={handleSubmit}>
       <input

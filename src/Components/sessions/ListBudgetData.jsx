@@ -4,6 +4,8 @@ const ListBudgetData = () => {
   return (
     <div>
       <Link to="/enter-budget">Add Budget </Link>
+      {/* <Link to="/dashboard">Dashboard (view charts)</Link>  */}
+
       <h2>Budget Data</h2>
     
       <table>
